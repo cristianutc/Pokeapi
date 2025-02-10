@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      <nav class="nav">
+        <img src="./img/images.png" alt="logo pokedex"/>
+        <input type="text" id="pokemonInput" placeholder="Nombre o id" />
+            <div class="nombre-contenedor">
+              <table class="pokemon-table">
+              <tr>
+                <td>
+                  <th> <td>
+                    <h3 id="nombre"></h3>
+                    <img
+                      id="imagen"
+                      src=""
+                      alt=""/>
+                    <p id="tipos"></p>
+                </td>
+              </tr>
+              </table>
+          </div>
+        </div>
+        <ul class="nav-list">
+        <ul class="nav-list">
+          <li class="nav-item"><button class="btn btn-header buscar" id="buscar">buscar</button></li>
+          <li class="nav-item"><button class="btn btn-header todos" id="todos">ver todos</button></li>
+          <li class="nav-item"><button class="btn btn-header normal" id="normal">Normal</button></li>
+          <li class="nav-item"><button class="btn btn-header fire" id="fire">Fuego</button></li>
+          <li class="nav-item"><button class="btn btn-header water" id="water">Agua</button> </li>
+          <li class="nav-item"><button class="btn btn-header grass" id="grass">Humo</button></li>
+          <li class="nav-item"><button class="btn btn-header electric" id="electric">Electrico</button></li>
+          <li class="nav-item"><button class="btn btn-header ice" id="ice">Hielo</button></li>
+          <li class="nav-item"><button class="btn btn-header fighting" id="fighting">Luchador</button></li>
+          <li class="nav-item"><button class="btn btn-header poison" id="poison">Posion</button></li>
+          <li class="nav-item"><button class="btn btn-header ground" id="ground">Ground</button></li>
+          <li class="nav-item"><button class="btn btn-header flying" id="flying">Flying</button></li>
+          <li class="nav-item"><button class="btn btn-header psychic" id="psychic">Psychic</button></li>
+          <li class="nav-item"><button class="btn btn-header bug" id="bug">Bug</button></li>
+          <li class="nav-item"><button class="btn btn-header rock" id="rock">Rocka</button></li>
+          <li class="nav-item"><button class="btn btn-header ghost" id="ghost">Fantasma</button></li>
+          <li class="nav-item"><button class="btn btn-header dark" id="dark">Oscuridad</button></li>
+          <li class="nav-item"><button class="btn btn-header dragon" id="dragon">Dragon</button></li>
+          <li class="nav-item"><button class="btn btn-header steel" id="steel">Steel</button></li>
+          <li class=" nav-item"><button class="btn btn-header fairy" id="fairy">Fairy</button></li>
+    </header>
+
+    <main>
+      <div id="todos">
+        <div class="pokemon-todos" id="listapokemon">
+          <!-- <div class="pokemon">
+            <p class="pokemon-id-back">#025</p>
+            <div class="pokemon-imagen">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+              alt="pikachu">
+            </div>
+            <div class="pokemon-info">
+              <div class="nombre-contenedor">
+                <p class="pokemon-id">#025</p>
+                <h2 class="pokemon-nombre">Pikachu</h2>
+              </div>
+              <div class="pokemon-tipos">
+                <p class="electric tipo">Electrico</p>
+                <p class="fighting tipo">fighting</p>
+              </div>
+              <div class="pokemon-stats">
+                <p class="stat">4m</p>
+                <p class="stat">60kg</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    
+
+    <!--     <h1>Lista de Posts</h1>
+    <ul id="posts-list"></ul> -->
+    <!--     <h1>Lista de Pokémon</h1>
+    <ul id="pokemon-list"></ul> -->
+    <!-- Aquí se mostrarán los Pokémon -->
+    <script src="main.js"></script>
+    <!--   <script type="module">
+      let response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+      let data = await response.json();
+      console.log(data);
+    </script> este codigo es para tener una promesa del seridor pero usando type directo en el
+    html lo recomdable seria usar js para que el codigo sea mas legible y no
+    tengas tdodo amontonado solo en html-->
+  </body>
+</html>
